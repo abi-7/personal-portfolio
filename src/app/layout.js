@@ -20,10 +20,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-          <section
-      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundColor: "#fdcce0" }} 
-    ></section>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
