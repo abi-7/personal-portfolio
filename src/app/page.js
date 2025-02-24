@@ -1,12 +1,25 @@
-import Image from "next/image";
-import HeroSection from "./components/Hero.js";
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/Hero";
+import AboutSection from "./components/About";
+import ProjectsSection from "./components/Projects";
+import ExperienceSection from "./components/Experience";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar />
-      <HeroSection />
-    </main>
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="projects">
+        <ProjectsSection />
+      </section>
+      <section id="experience">
+        <ExperienceSection />
+      </section>
+    </>
   );
 }
