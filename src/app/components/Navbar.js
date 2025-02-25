@@ -1,13 +1,13 @@
-"use client"
-import React from "react";
+'use client';
+import React from 'react';
 import {
   Navbar,
   Collapse,
   Typography,
   IconButton,
-} from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
- 
+} from '@material-tailwind/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -17,7 +17,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 text-lg"
       >
-        <a href="#about" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="#about"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           About Me
         </a>
       </Typography>
@@ -27,7 +30,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 text-lg"
       >
-        <a href="#projects" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="#projects"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           Projects
         </a>
       </Typography>
@@ -37,28 +43,31 @@ function NavList() {
         color="blue-gray"
         className="p-1 text-lg"
       >
-        <a href="#experience" className="flex items-center hover:text-blue-500 transition-colors">
+        <a
+          href="#experience"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           Experience
         </a>
       </Typography>
     </ul>
   );
 }
- 
+
 export default function NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
- 
+
   React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
- 
+    window.addEventListener('resize', handleWindowResize);
+
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
- 
+
   return (
     <Navbar className="mx-auto max-w-screen-xl px-6 py-3 mt-6">
       <div className="flex items-center justify-between text-blue-gray-900">
