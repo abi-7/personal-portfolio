@@ -1,34 +1,13 @@
 'use client'
 import React from 'react';
-import { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 
 export default function HeroSection() {
-  const [placeholder, setPlaceholder] = useState('');
-  const fullText = "Hello World.";
-  const typingSpeed = 150000; // Speed in milliseconds
-
-  useEffect(() => {
-    let currentIndex = 0;
-
-    const typeText = () => {
-      if (currentIndex < fullText.length) {
-        // Typing forward
-        setPlaceholder(fullText.slice(0, currentIndex + 1));
-        currentIndex++;
-        setTimeout(typeText, typingSpeed);
-      } 
-    };
-
-    // Start the typing animation
-    typeText();
-    return () => clearTimeout(typeText);
-  }, []);
-
+  
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#fdcce0]">
+    <div className="flex flex-col items-center justify-start min-h-screen bg-[#fdcce0] pt-[150px]">
 
-      <div className="mt-[10px] text-center">
+      <div className="text-center">
         <h1 className="text-6xl font-bold text-gray-800">
           Abigail Ferreira
         </h1>

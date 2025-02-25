@@ -15,9 +15,9 @@ function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 text-lg"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#about" className="flex items-center hover:text-blue-500 transition-colors">
           About Me
         </a>
       </Typography>
@@ -25,9 +25,9 @@ function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 text-lg"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#projects" className="flex items-center hover:text-blue-500 transition-colors">
           Projects
         </a>
       </Typography>
@@ -35,9 +35,9 @@ function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 text-lg"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#experience" className="flex items-center hover:text-blue-500 transition-colors">
           Experience
         </a>
       </Typography>
@@ -66,7 +66,7 @@ export default function NavbarSimple() {
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
+          className="mr-4 cursor-pointer py-1.5 text-lg"
         >
           Abigail Ferreira
         </Typography>
