@@ -20,7 +20,7 @@ const cards = [
     id: 2,
     title: 'Kiln Connection',
     description:
-      'An immersive web platform connecting professional artists and pottery enthusiasts, "Kiln Connection" was created as my final project for a Web Development course using php. The platform combines functionality and accessible design to provide users with a seamless experience.',
+      'An immersive web platform connecting professional artists and pottery enthusiasts, "Kiln Connection" was created as my final project for a Web Development course using php.',
     link: 'https://github.com/abi-7/Kiln-Connection',
   },
   {
@@ -29,6 +29,13 @@ const cards = [
     description:
       'This project is a fun and interactive guessing game based on Rick & Morty characters! Players are shown a random character image alongside four name options from the show and must guess the correct match.',
     link: 'https://github.com/abi-7/character-game',
+  },
+  {
+    id: 4,
+    title: 'Coffee.Break',
+    description:
+      'A fun desktop application that alerts you when it is time for your coffee break! (creative implementation of a pomodoro timer)',
+    link: 'https://github.com/abi-7/coffee.break',
   },
 ];
 

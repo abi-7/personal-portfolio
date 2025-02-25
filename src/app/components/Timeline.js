@@ -20,7 +20,7 @@ const milestones = [
   {
     id: 2,
     title: 'Web Developer - ACE Project Space Co-op',
-    date: 'May 2024 - Aug 2024 | Winnipeg, Manitoba, Canada · Hybrid',
+    date: 'May 2024 - Aug 2024 | Hybrid',
     description: '',
   },
 ];
@@ -35,7 +35,7 @@ export function DefaultTimeline() {
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography
-                variant="h6"
+                variant="h4"
                 color="blue-gray"
                 className="leading-none"
               >
@@ -43,7 +43,11 @@ export function DefaultTimeline() {
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
-              <Typography variant="" color="blue-gray" className="leading-none">
+              <Typography
+                variant=""
+                color="blue-gray"
+                className="leading-none pt-3"
+              >
                 {milestone.date}
               </Typography>
               <Typography
