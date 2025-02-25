@@ -16,8 +16,12 @@ export default function CardDefault() {
           <img src="/images/linkedin.jpeg" alt="profile-image" />
         </CardHeader>
         <CardBody>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
-            Hi there!
+          <Typography
+            variant="h5"
+            color="blue-gray"
+            className="mb-2 text-center"
+          >
+            Hi there!😁
           </Typography>
         </CardBody>
       </Card>
