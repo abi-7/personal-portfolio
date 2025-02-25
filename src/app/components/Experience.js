@@ -1,3 +1,4 @@
+import { DefaultTimeline } from "./Timeline";
 
 export default function ExperienceSection() {
     return (
@@ -6,7 +7,10 @@ export default function ExperienceSection() {
             <h2 className="text-5xl font-bold text-gray-800">
               &lt;Experience /&gt;
             </h2>
-          </div>
+        </div>
+        <div className="pt-10 pb-10 text-left ml-[150px] mr-[150px]">
+          <DefaultTimeline />
+       </div>   
       </section>
     );
   }

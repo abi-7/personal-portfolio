@@ -9,7 +9,7 @@ export default function ProjectsSection() {
               &lt;My Projects /&gt;
             </h2>
           </div>
-          <div className="pt-10 text-left ml-[150px] mr-[150px]">
+          <div className="pt-10 pb-10 text-left ml-[150px] mr-[150px]">
            <CardWithLink />
           </div>
       </section>
