@@ -45,10 +45,10 @@ const cards = [
 
 export function CardWithLink() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 overflow-visible">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {cards.map((card) => (
         <motion.div
-          className="w-full"
+          className="flex w-full h-full"
           key={card.id}
           whileHover={{ scale: 1.1 }}
         >

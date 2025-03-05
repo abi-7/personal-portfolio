@@ -57,7 +57,7 @@ export default function Home() {
       </motion.section>
       <motion.section
         id="projects"
-        className="p-4 md:p-8 lg:p-12"
+        className="p-4 md:p-8 lg:p-12 "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,

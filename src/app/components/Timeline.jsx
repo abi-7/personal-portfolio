@@ -33,7 +33,7 @@ export function DefaultTimeline() {
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
-              <TimelineIcon className="w-6 h-6 sm:w-8 sm:h-8" />
+              <TimelineIcon className="w-5 h-5 sm:w-8 sm:h-8" />
               <Typography
                 variant="h4"
                 color="blue-gray"
