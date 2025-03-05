@@ -1,0 +1,39 @@
+import CardDefault from './Card';
+
+export default function AboutSection() {
+  return (
+    <section style={{ backgroundColor: '#fdcce0' }}>
+      <div className="bg-opacity-50 pt-10 rounded-lg text-left ml-[150px]">
+        <h2 className="text-5xl font-bold text-gray-800">&lt;About Me /&gt;</h2>
+      </div>
+      <div className="flex flex-row items-start">
+        <div className="mt-[40px] text-2xl text-gray-600 text-left ml-[150px] pr-20 flex-grow">
+          <p>
+            I’m a recent graduate from Red River College Polytechnic with a
+            diploma in <b>Business Information Technology</b>, specializing in{' '}
+            <b>front-end web development</b>. <br />
+            My expertise lies in building user-friendly, accessible, and
+            high-performance web applications using modern UI/UX principles.
+          </p>
+          <br />
+          <p>Technologies I&apos;ve worked with:</p>
+          <ul className="list-[circle] ml-10">
+            <li>React.js</li>
+            <li>Javascript</li>
+            <li>Next.js</li>
+            <li>Typescript</li>
+            <li>Figma (software)</li>
+          </ul>
+          <br />
+          <p>
+            Outside of work I enjoy expressing my creativity through many
+            outlets such as pottery, writing, painting, and baking!
+          </p>
+        </div>
+        <div className="flex-shrink-0">
+          <CardDefault />
+        </div>
+      </div>
+    </section>
+  );
+}
