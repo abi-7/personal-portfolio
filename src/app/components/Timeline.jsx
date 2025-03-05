@@ -33,11 +33,11 @@ export function DefaultTimeline() {
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
-              <TimelineIcon />
+              <TimelineIcon className="w-6 h-6 sm:w-8 sm:h-8" />
               <Typography
                 variant="h4"
                 color="blue-gray"
-                className="leading-none"
+                className="leading-none text-sm sm:text-base"
               >
                 {milestone.title}
               </Typography>
@@ -46,14 +46,14 @@ export function DefaultTimeline() {
               <Typography
                 variant=""
                 color="blue-gray"
-                className="leading-none pt-3"
+                className="leading-none pt-3 text-xs sm:text-sm"
               >
                 {milestone.date}
               </Typography>
               <Typography
                 variant="small"
                 color="gary"
-                className="font-normal text-gray-600"
+                className="font-normal text-gray-600 text-xs sm:text-sm"
               >
                 {milestone.description}
               </Typography>

@@ -3,16 +3,15 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
   Tooltip,
 } from '@material-tailwind/react';
 
 export default function CardDefault() {
   return (
-    <div className="flex justify-end mr-[150px]">
-      <Card className="mt-6 w-96">
-        <CardHeader color="blue-gray" className="relative ">
+    <div className="flex justify-center md:justify-end md:mr-[150px]">
+      <Card className="mt-6 w-72 md:w-96">
+        <CardHeader color="blue-gray" className="relative">
           <img src="/images/linkedin.jpeg" alt="profile-image" />
         </CardHeader>
         <CardBody>
