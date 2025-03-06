@@ -33,11 +33,11 @@ export function DefaultTimeline() {
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
-              <TimelineIcon className="w-5 h-5 sm:w-8 sm:h-8" />
+              <TimelineIcon className="w-5 h-5 sm:w-5 sm:h-5" />
               <Typography
-                variant="h4"
+                variant="h5"
                 color="blue-gray"
-                className="leading-none text-sm sm:text-base"
+                className="leading-none sm:text-lg md:text-xl"
               >
                 {milestone.title}
               </Typography>
