@@ -15,7 +15,7 @@ export default function AboutSection() {
             diploma in <b>Business Information Technology</b>, specializing in{' '}
             <b>front-end web development</b>. <br />
             My expertise lies in building user-friendly, accessible, and
-            high-performance web applications using modern UI/UX principles.
+            innovative web applications using modern UI/UX principles.
           </p>
           <br />
           <p>Technologies I&apos;ve worked with:</p>
@@ -24,7 +24,7 @@ export default function AboutSection() {
             <li>Javascript</li>
             <li>Next.js</li>
             <li>Typescript</li>
-            <li>Figma (software)</li>
+            <li>Figma</li>
           </ul>
           <br />
           <p>

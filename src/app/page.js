@@ -16,7 +16,7 @@ export default function Home() {
       if (window.innerWidth < 768) {
         setViewportAmount(0.2);
       } else {
-        setViewportAmount(0.5);
+        setViewportAmount(0.4);
       }
     };
 
