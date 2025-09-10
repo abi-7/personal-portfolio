@@ -11,6 +11,16 @@ import { motion } from 'framer-motion';
 const cards = [
   {
     id: 1,
+    svg: '/green-check.svg',
+    title: 'Smiski Steps',
+    date: 'August | 2025',
+    description:
+      'A cute and cozy desktop to-do list app to keep track of all your important tasks — inspired by the mysterious little Smiskis!',
+    tech: 'JavaScript | Electron.js | HTML | CSS | Canva (custom illustrations)',
+    link: 'https://github.com/abi-7/smiski-steps',
+  },
+  {
+    id: 2,
     svg: '/plant.svg',
     title: 'Affirmation Garden',
     date: 'June | 2025',
@@ -20,7 +30,7 @@ const cards = [
     link: 'https://github.com/abi-7/affirmation-app',
   },
   {
-    id: 2,
+    id: 3,
     svg: '/coffee.svg',
     title: 'Coffee.Break',
     date: 'March | 2025',
@@ -30,7 +40,7 @@ const cards = [
     link: 'https://github.com/abi-7/coffee.break',
   },
   {
-    id: 3,
+    id: 4,
     svg: '/pixel-guy.svg',
     title: 'Interactive About Me Page',
     date: 'August | 2024',
@@ -40,7 +50,7 @@ const cards = [
     link: 'https://day-in-pixels.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     svg: '/guess.svg',
     title: 'Character Guessing Game',
     date: 'July | 2024',
@@ -50,7 +60,7 @@ const cards = [
     link: 'https://rick-n-morty-guess.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     svg: '/vase.svg',
     title: 'Kiln Connection',
     date: 'April | 2024',
@@ -60,7 +70,7 @@ const cards = [
     link: 'https://github.com/abi-7/Kiln-Connection',
   },
   {
-    id: 6,
+    id: 7,
     svg: '/lock.svg',
     title: 'Password Generator',
     date: 'July | 2024',

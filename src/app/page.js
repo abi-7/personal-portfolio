@@ -38,7 +38,7 @@ export default function Home() {
           y: 0,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        viewport={{ once: false, amount: viewportAmount }}
+        viewport={{ once: true, amount: viewportAmount }}
       >
         <HeroSection />
       </motion.section>
@@ -51,7 +51,7 @@ export default function Home() {
           y: 0,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        viewport={{ once: false, amount: viewportAmount }}
+        viewport={{ once: true, amount: viewportAmount }}
       >
         <AboutSection />
       </motion.section>
@@ -64,7 +64,7 @@ export default function Home() {
           y: 0,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        viewport={{ once: false, amount: viewportAmount }}
+        viewport={{ once: true, amount: Math.min(viewportAmount, 0.1) }}
       >
         <ProjectsSection />
       </motion.section>
@@ -77,7 +77,7 @@ export default function Home() {
           y: 0,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        viewport={{ once: false, amount: viewportAmount }}
+        viewport={{ once: true, amount: viewportAmount }}
       >
         <ExperienceSection />
       </motion.section>
