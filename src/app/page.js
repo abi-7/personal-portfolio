@@ -7,6 +7,7 @@ import ProjectsSection from './components/Projects';
 import ExperienceSection from './components/Experience';
 import Footer from './components/Footer';
 import { motion } from 'framer-motion';
+import TechnologiesSection from './components/Technologies';
 
 export default function Home() {
   const [viewportAmount, setViewportAmount] = useState(0.5);
@@ -54,6 +55,19 @@ export default function Home() {
         viewport={{ once: true, amount: viewportAmount }}
       >
         <AboutSection />
+      </motion.section>
+      <motion.section
+        id="technologies"
+        className="p-4 md:p-8 lg:p-12"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 0.2, duration: 0.5 },
+        }}
+        viewport={{ once: true, amount: viewportAmount }}
+      >
+        <TechnologiesSection />
       </motion.section>
       <motion.section
         id="projects"
