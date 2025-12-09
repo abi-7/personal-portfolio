@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Typewriter from 'typewriter-effect';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function HeroSection() {
   return (
@@ -21,14 +21,16 @@ export default function HeroSection() {
                         rounded-full bg-white flex items-center justify-between"
         >
           <div className="text-3xl text-black">
-            <Typewriter
-              options={{
-                strings: ['Hello World.'], // Text to type
-                autoStart: true, // Start typing automatically
-                loop: true, // Loop the animation
-                delay: 150, // Typing speed (in milliseconds)
-                deleteSpeed: 75, // Deleting speed (in milliseconds)
-              }}
+            <TypeAnimation
+              sequence={[
+                'Hello World.', // Text to type
+                2000, // Wait 2 seconds before deleting
+                '', // Delete
+              ]}
+              wrapper="span"
+              speed={50} // Typing speed (higher = faster)
+              deletionSpeed={75} // Deletion speed
+              repeat={Infinity} // Loop infinitely
             />
           </div>
         </div>
