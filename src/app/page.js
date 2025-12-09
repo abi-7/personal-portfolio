@@ -8,6 +8,7 @@ import ExperienceSection from './components/Experience';
 import Footer from './components/Footer';
 import { motion } from 'framer-motion';
 import TechnologiesSection from './components/Technologies';
+import Snowfall from 'react-snowfall';
 
 export default function Home() {
   const [viewportAmount, setViewportAmount] = useState(0.5);
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <>
+      <Snowfall color="white" />
       <NavbarSimple />
       <motion.section
         id="hero"
