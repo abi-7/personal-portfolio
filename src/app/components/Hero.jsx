@@ -6,11 +6,11 @@ export default function HeroSection() {
   return (
     <div
       className="flex flex-col items-center justify-start min-h-screen 
-                    bg-[#fdcce0] pt-[150px]"
+                    bg-[#a2b2fc] pt-[150px]"
     >
       <div className="text-center">
         <h1 className="text-6xl font-bold text-gray-800">Abigail Ferreira</h1>
-        <p className="mt-[40px] text-3xl text-gray-600">
+        <p className="mt-[40px] text-3xl text-gray-700">
           I combine creativity with tech to make cool things :)
         </p>
       </div>
