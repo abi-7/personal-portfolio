@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import {
   Card,
   CardBody,
@@ -11,6 +12,16 @@ import { motion } from 'framer-motion';
 const cards = [
   {
     id: 1,
+    svg: '/batman.svg',
+    title: 'Comic Collector',
+    date: 'November | 2025',
+    description:
+      'A mobile comic book collection manager that lets you scan barcodes to instantly add comics to your digital library and access detailed information about each book.',
+    tech: 'React | TypeScript | Tailwind CSS | Canva (custom illustrations)',
+    link: 'https://github.com/abi-7/comic-collector',
+  },
+  {
+    id: 2,
     svg: '/green-check.svg',
     title: 'Smiski Steps',
     date: 'August | 2025',
@@ -18,16 +29,6 @@ const cards = [
       'A cute and cozy desktop to-do list app to keep track of all your important tasks — inspired by the mysterious little Smiskis!',
     tech: 'JavaScript | Electron.js | HTML | CSS | Canva (custom illustrations)',
     link: 'https://github.com/abi-7/smiski-steps',
-  },
-  {
-    id: 2,
-    svg: '/plant.svg',
-    title: 'Affirmation Garden',
-    date: 'June | 2025',
-    description:
-      'A cozy online dashboard where you nurture your emotional wellbeing one flower and affirmation at a time.',
-    tech: 'React | JavaScript | HTML | CSS | Firebase',
-    link: 'https://github.com/abi-7/affirmation-app',
   },
   {
     id: 3,
@@ -82,6 +83,8 @@ const cards = [
 ];
 
 export function CardWithLink() {
+  const [expandedCard, setExpandedCard] = useState(null);
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {cards.map((card) => (
@@ -114,11 +117,41 @@ export function CardWithLink() {
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <a href={card.link} className="inline-block">
+              {expandedCard === card.id ? (
+                <div className="mt-4 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-600">
+                  <p className="text-sm text-gray-700 mb-3">
+                    {card.link.includes('github.com')
+                      ? "This project just has a GitHub repository. You'll be taken to:"
+                      : card.link.includes('netlify.app')
+                      ? "This project is hosted on Netlify. You'll be taken to:"
+                      : "You'll be redirected to:"}
+                  </p>
+                  <code className="block bg-white px-3 py-2 rounded text-sm text-purple-600 mb-3 break-all">
+                    {card.link}
+                  </code>
+                  <div className="flex gap-2">
+                    <a
+                      href={card.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 text-sm"
+                    >
+                      Visit Project →
+                    </a>
+                    <button
+                      onClick={() => setExpandedCard(null)}
+                      className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              ) : (
                 <Button
                   size="sm"
                   variant="text"
                   className="flex items-center gap-2"
+                  onClick={() => setExpandedCard(card.id)}
                 >
                   Check it out here !
                   <svg
@@ -136,7 +169,7 @@ export function CardWithLink() {
                     />
                   </svg>
                 </Button>
-              </a>
+              )}
             </CardFooter>
           </Card>
         </motion.div>
