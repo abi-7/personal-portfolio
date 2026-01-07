@@ -31,12 +31,21 @@ export default function Footer() {
         >
           Instagram
         </a>
+        <span className="hidden sm:inline">•</span>
+        <a
+          href="https://www.buymeacoffee.com/abigailcodes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-600 transition-colors"
+        >
+          Buy Me a Coffee
+        </a>
       </div>
       <div className="text-center">
         <p className="text-gray-600">
           Developed and designed by Abigail Ferreira.
         </p>
-        <p className="text-gray-600 ">&copy; 2025</p>
+        <p className="text-gray-600 ">&copy; 2026</p>
       </div>
     </div>
   );
